@@ -18,7 +18,7 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
 
 # This script updates the local Network Vulnerability Tests (NVTs) from the
-# Greenbone Security Feed (GSF) or the Greenbone Community Feed (GCF). 
+# Greenbone Security Feed (GSF) or the Greenbone Community Feed (GCF).
 
 VERSION=@OPENVAS_VERSION@
 
@@ -132,7 +132,7 @@ log_err () {
 
 stderr_write ()
 {
-  echo "$1" > /dev/stderr
+  echo "$1" > /dev/tty
 }
 
 # Read the general information about the feed origin from
